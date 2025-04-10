@@ -1,0 +1,76 @@
+.custom-file-upload {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.custom-file-upload:hover {
+    border-color: #1e2a3a !important;
+    background-color: #f1f3f5 !important;
+}
+
+.custom-file-upload .bi-cloud-upload {
+    color: #1e2a3a;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: #2d4356;
+    box-shadow: 0 0 0 0.2rem rgba(45, 67, 86, 0.25);
+}
+
+.form-select:focus {
+    border-color: #2d4356;
+    box-shadow: 0 0 0 0.2rem rgba(45, 67, 86, 0.25);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    color: #1e2a3a;
+    border-color: #1e2a3a;
+}
+
+/* Animation for success messages */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Toastify__toast-container {
+    animation: slideIn 0.3s ease forwards;
+}
+
+/* Custom styling for form elements */
+.form-label {
+    color: #1e2a3a;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner-border {
+    animation: spin 1s linear infinite;
+}

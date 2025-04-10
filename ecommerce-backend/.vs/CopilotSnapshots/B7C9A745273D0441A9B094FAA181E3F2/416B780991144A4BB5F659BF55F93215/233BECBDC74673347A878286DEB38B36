@@ -1,0 +1,75 @@
+﻿using EcommerceProject.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace EcommerceProject.Data;
+
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
+    }
+
+    public DbSet<Product> Products { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Product>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Name).IsRequired().HasMaxLength(200);
+            entity.Property(e => e.Description).HasMaxLength(2000);
+            entity.Property(e => e.Price).HasColumnType("decimal(18,2)");
+            entity.Property(e => e.CreatedAt).HasColumnType("datetime2").HasDefaultValueSql("GETUTCDATE()");
+
+            // Seed Data with static date
+            var seedDate = new DateTime(2024, 3, 12, 12, 0, 0, DateTimeKind.Utc);
+            entity.HasData(
+                new Product
+                {
+                    Id = 1,
+                    Name = "Smartphone X",
+                    Description = "Latest flagship smartphone with advanced features",
+                    Price = 999.99M,
+                    StockQuantity = 50,
+                    CreatedAt = seedDate
+                },
+                new Product
+                {
+                    Id = 2,
+                    Name = "Laptop Pro",
+                    Description = "High-performance laptop for professionals",
+                    Price = 1499.99M,
+                    StockQuantity = 30,
+                    CreatedAt = seedDate
+                },
+                new Product
+                {
+                    Id = 3,
+                    Name = "Wireless Earbuds",
+                    Description = "Premium wireless earbuds with noise cancellation",
+                    Price = 199.99M,
+                    StockQuantity = 100,
+                    CreatedAt = seedDate
+                },
+                new Product
+                {
+                    Id = 4,
+                    Name = "Smart Watch",
+                    Description = "Fitness and health tracking smartwatch",
+                    Price = 299.99M,
+                    StockQuantity = 75,
+                    CreatedAt = seedDate
+                },
+                new Product
+                {
+                    Id = 5,
+                    Name = "Gaming Console",
+                    Description = "Next-gen gaming console with 4K support",
+                    Price = 499.99M,
+                    StockQuantity = 25,
+                    CreatedAt = seedDate
+                }
+            );
+        });
+    }
+}

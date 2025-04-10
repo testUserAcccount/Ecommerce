@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\11e24383-5934-42aa-aa8d-5584c9fe67df_Hp-laptop.webp",
+      "PackagePath": "staticwebassets\\images\\products\\11e24383-5934-42aa-aa8d-5584c9fe67df_Hp-laptop.webp"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\2648be02-a2ef-40e2-a62c-6e0be0a2c6af_washingMachineImage.webp",
+      "PackagePath": "staticwebassets\\images\\products\\2648be02-a2ef-40e2-a62c-6e0be0a2c6af_washingMachineImage.webp"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\75283338-f7ee-4087-8a08-1365bd31674e_smart-tv.jfif",
+      "PackagePath": "staticwebassets\\images\\products\\75283338-f7ee-4087-8a08-1365bd31674e_smart-tv.jfif"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\869be31f-e2c6-4b18-bf30-f29d98a5f21e_smartwatchImg.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\869be31f-e2c6-4b18-bf30-f29d98a5f21e_smartwatchImg.jpg"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\942229d5-d1e1-469e-b29e-6168c92f1650_furnitureImage.webp",
+      "PackagePath": "staticwebassets\\images\\products\\942229d5-d1e1-469e-b29e-6168c92f1650_furnitureImage.webp"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\97e0e776-10c6-4c34-bc96-eb6627a39ec5_clean-blank-shirt-hanger.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\97e0e776-10c6-4c34-bc96-eb6627a39ec5_clean-blank-shirt-hanger.jpg"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\9d69b01f-0dc2-49e2-9c53-1958b2af95c9_pixel-8a.webp",
+      "PackagePath": "staticwebassets\\images\\products\\9d69b01f-0dc2-49e2-9c53-1958b2af95c9_pixel-8a.webp"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\c72a077f-0f4d-42ab-b35e-c758e9a8f520_Smart-Inverter-Compressor.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\c72a077f-0f4d-42ab-b35e-c758e9a8f520_Smart-Inverter-Compressor.jpg"
+    },
+    {
+      "Id": "D:\\AI-Tools-Poc\\EcommerceSite\\ecommerce-backend\\wwwroot\\images\\products\\dc738ca5-fa91-4a33-aa89-cc26181f558f_clean-blank-shirt-hanger.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\dc738ca5-fa91-4a33-aa89-cc26181f558f_clean-blank-shirt-hanger.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EcommerceProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.EcommerceProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.EcommerceProject.props",
+      "PackagePath": "build\\EcommerceProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.EcommerceProject.props",
+      "PackagePath": "buildMultiTargeting\\EcommerceProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.EcommerceProject.props",
+      "PackagePath": "buildTransitive\\EcommerceProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

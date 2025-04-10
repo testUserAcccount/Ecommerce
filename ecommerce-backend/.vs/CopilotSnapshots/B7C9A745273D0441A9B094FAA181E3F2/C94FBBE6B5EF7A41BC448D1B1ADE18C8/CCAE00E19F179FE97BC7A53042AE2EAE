@@ -1,0 +1,46 @@
+﻿using EcommerceProject.Data;
+using Microsoft.EntityFrameworkCore;
+using MediatR;
+using Microsoft.OpenApi.Models;
+using EcommerceProject.Services.Interfaces;
+using EcommerceProject.Services.Repositories;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+
+// Add Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { 
+        Title = "EcommerceProject API", 
+        Version = "v1",
+        Description = "An ASP.NET Core Web API for Ecommerce Project"
+    });
+});
+
+// Add MediatR
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+
+// Register Repository
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+// Add DbContext
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EcommerceProject API v1"));
+}
+
+app.UseHttpsRedirection();
+app.MapControllers();
+
+app.Run();
