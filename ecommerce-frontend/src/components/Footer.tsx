@@ -28,13 +28,6 @@ const Footer: React.FC = () => {
                     </address>
                 </div>
                 <div className="footer-section">
-                    <h3>Consumer Policy</h3>
-                    <ul>
-                        <li><a href="javascript:void(0)" onClick={handleClick}>Privacy Policy</a></li>
-                        <li><a href="javascript:void(0)" onClick={handleClick}>Terms of Use</a></li>
-                        <li><a href="javascript:void(0)" onClick={handleClick}>Return Policy</a></li>
-                        <li><a href="javascript:void(0)" onClick={handleClick}>Shipping Policy</a></li>
-                    </ul>
                 </div>
                 <div className="footer-section">
                     <h3>Quick Links</h3>
