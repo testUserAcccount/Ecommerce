@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EcommerceProject",
-    "\\EcommerceProject\\Services",
-    "\\EcommerceProject\\Services\\Repositories"
+    "\\ecommerce-backend",
+    "\\ecommerce-frontend",
+    "\\ecommerce-frontend\\src",
+    "\\ecommerce-frontend\\src\\components"
   ],
-  "SelectedNode": "\\EcommerceProject\\Services\\Repositories\\UserRepository.cs",
+  "SelectedNode": "\\ecommerce-frontend\\src\\components\\ProductList.tsx",
   "PreviewInSolutionExplorer": false
 }

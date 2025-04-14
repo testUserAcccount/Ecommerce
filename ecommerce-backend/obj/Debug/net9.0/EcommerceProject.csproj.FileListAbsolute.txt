@@ -1493,3 +1493,4 @@ D:\AI-Tools-Poc\EcommerceSite\ecommerce-backend\obj\Debug\net9.0\refint\Ecommerc
 D:\AI-Tools-Poc\EcommerceSite\ecommerce-backend\obj\Debug\net9.0\EcommerceProject.pdb
 D:\AI-Tools-Poc\EcommerceSite\ecommerce-backend\obj\Debug\net9.0\EcommerceProject.genruntimeconfig.cache
 D:\AI-Tools-Poc\EcommerceSite\ecommerce-backend\obj\Debug\net9.0\ref\EcommerceProject.dll
+D:\AI-Tools-Poc\EcommerceSite\ecommerce-backend\obj\Debug\net9.0\EcommerceProject.sourcelink.json

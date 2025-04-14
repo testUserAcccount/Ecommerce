@@ -32,7 +32,7 @@ const ProductList: React.FC = () => {
         const processedValue = value === '' ? '' : Math.max(0, Number(value));
         setPriceRange(prev => ({ ...prev, [type]: processedValue }));
     };
-    
+
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -101,7 +101,7 @@ const ProductList: React.FC = () => {
             await addToCart(user!.userID, productId, 1);
             // Force refresh cart data by dispatching a custom event
             window.dispatchEvent(new CustomEvent('cart-updated'));
-            
+
             // Get the product name for the toast message
             const product = products.find(p => p.productID === productId);
             toast.success(
@@ -207,7 +207,7 @@ const ProductList: React.FC = () => {
 
             <div className="container mt-5">
                 <div className="section-header mb-5">
-                    <h2 className="text-center mb-4" style={{ 
+                    <h2 className="text-center mb-4" style={{
                         color: '#1e2a3a',
                         fontSize: '2.5rem',
                         fontWeight: 'bold',
@@ -337,14 +337,14 @@ const ProductList: React.FC = () => {
                                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                                 transition: 'transform 0.3s ease, box-shadow 0.3s ease'
                             }}
-                            onMouseOver={(e) => {
-                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
-                            }}
-                            onMouseOut={(e) => {
-                                e.currentTarget.style.transform = 'translateY(0)';
-                                e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-                            }}>
+                                onMouseOver={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                    e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+                                }}
+                                onMouseOut={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                    e.currentTarget.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                                }}>
                                 <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
                                     <img
                                         src={getImageUrl(product.imageURL || '')}
@@ -365,7 +365,7 @@ const ProductList: React.FC = () => {
                                     />
                                 </div>
                                 <div className="card-body d-flex flex-column" style={{ padding: '1.5rem' }}>
-                                    <h5 className="card-title mb-2" style={{ 
+                                    <h5 className="card-title mb-2" style={{
                                         color: '#1e2a3a',
                                         fontSize: '1.1rem',
                                         fontWeight: 'bold'
